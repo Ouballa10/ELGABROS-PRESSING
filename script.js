@@ -728,3 +728,6 @@ null&&(this.Fg.delete(c),c.includes("-")?a.removeProperty(c):a[c]=null);for(cons
  SPDX-License-Identifier: BSD-3-Clause
 */
 Symbol.for("");var fga=arguments[0],xga=new _.lg;_.ja.google.maps.Load&&_.ja.google.maps.Load(wga);}).call(this,{});
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("show");
+}
