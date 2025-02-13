@@ -234,3 +234,8 @@ form.submitting .wpcf7-spinner {
 .mobile-button {
     z-index: 9999;
 }
+iframe {
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+}
