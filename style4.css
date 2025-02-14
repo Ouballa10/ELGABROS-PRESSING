@@ -6432,3 +6432,7 @@ _::full-page-media, _:future,
     height: auto;
     width: 100%
 }
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: auto !important;
+}

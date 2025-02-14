@@ -604,3 +604,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+window.addEventListener("touchstart", function() {
+    document.activeElement.blur();
+}, true);

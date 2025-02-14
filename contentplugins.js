@@ -1158,5 +1158,14 @@ document.documentElement.className+=" js_active ",document.documentElement.class
             });
         });
     });
+    document.querySelectorAll(".category-button").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // منع النزول التلقائي
+            // هنا الكود ديالك باش تبدل المحتوى بلا ما يهبط التليفون
+        });
+    });
     
+    window.addEventListener("touchstart", function() {
+        document.activeElement.blur();
+    }, true);
     
