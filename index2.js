@@ -1,7 +1,7 @@
 /*!
- * WPBakery Page Builder v6.0.0 (https://wpbakery.com)
+ * WPBakery Page Builder v6.0.0 (
  * Copyright 2011-2020 Michael M, WPBakery
- * License: Commercial. More details: http://go.wpbakery.com/licensing
+ * License: Commercial. More details: 
  */
 
 // jscs:disable
@@ -56,7 +56,7 @@ function($) {
             var po = document.createElement("script");
             po.type = "text/javascript",
             po.async = !0,
-            po.src = "https://apis.google.com/js/plusone.js";
+            po.src = "";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(po, s)
         }()
@@ -67,7 +67,7 @@ function($) {
             var po = document.createElement("script");
             po.type = "text/javascript",
             po.async = !0,
-            po.src = "https://assets.pinterest.com/js/pinit.js";
+            po.src = "";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(po, s)
         }()
