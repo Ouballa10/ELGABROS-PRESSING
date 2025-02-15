@@ -564,11 +564,11 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield;
-    /* Addresses appearance set to searchfield in S5, Chrome */
+   
 }
 
 input[type="search"]:-webkit-search-decoration {
-    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+
     -webkit-appearance: none;
 }
 

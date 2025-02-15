@@ -239,3 +239,27 @@ iframe {
     height: auto;
     min-height: 400px;
 }
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Y-dir wrapping ila makanx l'espace */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 0 10px; /* Espace bin les items */
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column; /* Y-wli vertical f téléphone */
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin-bottom: 10px;
+    }
+}
+

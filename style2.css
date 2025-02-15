@@ -586,16 +586,7 @@ rs-cbg-mask-wrap
 
 rs-mask-wrap { overflow: hidden }
 rs-fullwidth-wrap { position:relative;width:100%;height:auto;display: block; overflow:visible;max-width:none !important;}
-/*IE11 AND IE EDGE NEED SOME SPECIAL OVERFLOW
-Removed now since iE 11 and ieEdge fullwidth Slider had spacings again on other themes.
-May need to keep in eye the Carousel and Modal sliders in Fullscreen / Fullwidth mode ! 
-@media screen and (-ms-high-contrast: none) {
-	rs-fullwidth-wrap { overflow: hidden; }
-}
-@supports (-ms-ime-align:auto) {
-  rs-fullwidth-wrap { overflow: hidden; }  
-}
-*/  
+
 
 .rev_row_zone_top 				{	top:0px;}
 .rev_row_zone_bottom 			{	bottom:0px;}
@@ -807,11 +798,7 @@ rs-bgvideo 		{	position: absolute;top:0px;left:0px; width:100%;height:100%;z-ind
 .rs-layer-video .html5vid.hidefullscreen video::-webkit-media-controls-fullscreen-button  { display: none; }
 
 
-@supports not (-ms-high-contrast:none) {
-   /* Non-IE styles here */
-	.rs-fsv .fullcoveredvideo audio 		{	object-fit:cover !important;}
-	.rs-fsv .fullcoveredvideo video 		{	object-fit:cover !important;}
-}
+
 
 .rs-fullvideo-cover					{	width:100%;height:100%;top:0px;left:0px;position: absolute; background:transparent;z-index:5;}
 

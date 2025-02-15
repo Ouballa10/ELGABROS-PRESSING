@@ -813,28 +813,29 @@
             });
         });
     };
-
     var equalizeHeight = function() {
         $(window).on('load resize', function () {
             setTimeout(function () {
-                $(document).imagesLoaded(function () {
-                    if ( matchMedia( 'only screen and (max-width: 767px)' ).matches ) {
-                        $('.equalize').equalize({equalize: 'outerHeight', reset: true});
+                // تأكد من تحميل الصور أولاً
+                $.imagesLoaded(function () {
+                    if (matchMedia('only screen and (max-width: 767px)').matches) {
+                        $('.equalize').equalize({ equalize: 'outerHeight', reset: true });
                         $('.equalize.sm-equalize-auto').children().css("height", "");
-                        return false;
-                    } else if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
-                        $('.equalize').equalize({equalize: 'outerHeight', reset: true});
-                        return false;
-                    } else if ( matchMedia( 'only screen and (max-width: 1199px)' ).matches ) {
-                        $('.equalize').equalize({equalize: 'outerHeight', reset: true});
-                        return false;
+                    } else if (matchMedia('only screen and (max-width: 991px)').matches) {
+                        $('.equalize').equalize({ equalize: 'outerHeight', reset: true });
+                    } else if (matchMedia('only screen and (max-width: 1199px)').matches) {
+                        $('.equalize').equalize({ equalize: 'outerHeight', reset: true });
                     } else {
-                        $('.equalize').equalize({equalize: 'outerHeight', reset: true});
+                        $('.equalize').equalize({ equalize: 'outerHeight', reset: true });
                     }
                 });
-            }, 500);
+            }, 500); // تأخير 500 مللي ثانية
         });
     };
+    
+    // استدعاء الدالة
+    equalizeHeight();
+    
 
     var dynamicStyle = function() {
         var
